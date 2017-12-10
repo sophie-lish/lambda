@@ -1,0 +1,25 @@
+详情参照 http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html#section5
+
+使用lambda表达式的基础是在@FunctionalInterface之上
+（可代替传统的内部类、充分利用java.util.function包中的@FunctionalInterface或自定义的、和connections集合比较完美的结合使用）
+
+Lambda表达式语法（结构）
+参数列表        箭头令牌            身体(表达式或者语句块)
+            -> 或 => 或 ::
+
+
+Lambda表达式格式：
+(参数列表)=>表达式或者语句块 
+可以有多个参数，一个参数，或者无参数。
+参数类型可以隐式或者显式。例如：
+(x, y) => x * y //多参数，隐式类型=> 表达式
+x => x * 10 //单参数， 隐式类型=>表达式
+x => { return x * 10; } //单参数，隐式类型=>语句块
+(int x) => x * 10 // 单参数，显式类型=>表达式
+(int x) => { return x * 10; } // 单参数，显式类型=>语句块
+() => Console.WriteLine() //无参数
+
+
+本代码参照http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html#section5提供代码
+
+
